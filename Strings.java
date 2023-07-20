@@ -1,24 +1,24 @@
-import java.util.Arrays;
-// import java.util.Scanner;
+// import java.util.Arrays;
+// // import java.util.Scanner;
 
-public class Strings {
+// public class Strings {
     
-   static int leftmost(String s){
-    int res =Integer.MAX_VALUE;
- int[] arr = new int[127];
-    Arrays.fill(arr,-1);
+//    static int leftmost(String s){
+//     int res =Integer.MAX_VALUE;
+//  int[] arr = new int[127];
+//     Arrays.fill(arr,-1);
 
-    for(int i =0; i<s.length(); i++){
-        if(s.charAt(i)==-1){
-        arr[s.charAt(i)]=i;
-        }
-        else{
-            arr[s.charAt(i)]=Math.min(res,arr[s.charAt(i)]);
+//     for(int i =0; i<s.length(); i++){
+//         if(s.charAt(i)==-1){
+//         arr[s.charAt(i)]=i;
+//         }
+//         else{
+//             arr[s.charAt(i)]=Math.min(res,arr[s.charAt(i)]);
 
 
-        }
-    }
-return(res==Integer.MAX_VALUE ? -1: res);
+//         }
+//     }
+// return(res==Integer.MAX_VALUE ? -1: res);
 
 
 //     }
