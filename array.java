@@ -1,5 +1,5 @@
 
-//  import java.util.ArrayList;
+//  import java.util.Arrays;
 
 
 // An array is a collection of items of same data type stored at 
@@ -53,7 +53,7 @@
 
 
 // ***** LINEAR SEARCH ******
-// class array{
+//  class array{
 
 //     public static int fun(int arr[], int n, int x ){
 //         for(int i=0; i<n; i++){
@@ -68,14 +68,15 @@
 //         return -1;
 //     }
 //         public static void main(String args[]){
-//             // int arr[]= {12,23,34,33};
-//             // int x=23;
+//             int arr[]= {12,23,34,33};
+//             int x=23;
 //             fun( new int[] {12,23,34,33},3,34);
 //         }
 
 //     }
 
-//     new int[] {12,23,34}
+
+    // new int[] {12,23,34}
 
 // **** INSERT OPERATION ****
 
@@ -169,25 +170,46 @@
 
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class array{
-    public static void main(String[]args){
-    Scanner sc= new Scanner(System.in);
-    int n = sc.nextInt();
-    int x= sc.
-    int[]arr = new int[n+1];
-    int a =2;
-    arr[0]=0;
-    arr[1]=1;
-    while(a<=n){
-        arr[a]=arr[a-1]+arr[a-2];
-        a++;
+// class array{
+//     public static void main(String[]args){
+//     Scanner sc= new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int x= sc.
+//     int[]arr = new int[n+1];
+//     int a =2;
+//     arr[0]=0;
+//     arr[1]=1;
+//     while(a<=n){
+//         arr[a]=arr[a-1]+arr[a-2];
+//         a++;
         
+//     }
+//     System.out.println(arr[n]);
+//     }
+// }
+
+
+
+import java.util.Arrays;
+
+class Array{
+    // public arr[];
+    public static int fun(arr[], int n, int x){
+    for(int i =0; i<n;i++){
+        if(arr[i]==x){
+            return x;
+
+  }
+
     }
-    System.out.println(arr[n]);
-    }
+
+
 }
-
-
-
+public static void main( String args[]){
+    arr[]={1,2,3};
+    int x =2;
+    fun(arr[],2,2);
+}
+}
