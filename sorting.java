@@ -4,31 +4,62 @@
 // simplest sorting algorithm- repeatedly swapping of adjacent elements until they are not in the intended order.
 
 
-import java.util.*;
 
-class sorting{
-    public static void bubbleSort(int arr[]){
-for(int i =0;i<arr.length-1;i++){
-    for(int j =0; j<arr.length-1-i;j++){
-        // if we are taking ath element at the back then we have to leave last a elements in iteration
-    if(arr[j]>arr[j+1]){
-        int temp = arr[j];
+// import java.util.*;
 
-        arr[j]=arr[j+1];
-        arr[j+1]=temp;
-    }
-}
-}
+// class sorting{
+//     public static void bubbleSort(int arr[]){
+// for(int i =0;i<arr.length-1;i++){
+//     for(int j =0; j<arr.length-1-i;j++){
+//         // if we are taking ath element at the back then we have to leave last a elements in iteration
+//     if(arr[j]>arr[j+1]){
+//         int temp = arr[j];
 
-    }
-    public static void main (String args[]){
-        int arr[]= {7,8,3,1,2};
-        bubbleSort(arr);
-        for(int i = 0; i<arr.length;i++){
-        System.out.print(arr[i]);
+//         arr[j]=arr[j+1];
+//         arr[j+1]=temp;
+//     }
+// }
+// }
 
-    }
-}
-}
+//     }
+//     public static void main (String args[]){
+//         int arr[]= {7,8,3,1,2};
+//         bubbleSort(arr);
+//         for(int i = 0; i<arr.length;i++){
+//         System.out.print(arr[i]);
+
+//     }
+// }
+// }
 
 // time complexity - O(n^2)
+
+
+
+
+// SELECTION SORT
+
+class sorting{
+    public static void main(String args[]){
+        int[] arr = {7,8,3,1,2};
+        SelectionSort(arr);
+
+    }
+
+    public static void SelectionSort(int arr[]){
+        int n = arr.length-1;
+        int smallest;
+        // int i;
+for(int i =0;i<n;i++){
+        for (int j =i; j<n; j++){
+            if(arr[j]<arr[j+1]){
+                smallest = arr[j];
+
+            }
+        }
+        arr[i]=smallest;  
+    }
+    }
+}
+
+
